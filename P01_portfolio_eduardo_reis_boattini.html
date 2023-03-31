@@ -1,0 +1,120 @@
+import React from "react";
+import styled from "styled-components";
+
+const Portfolio = () => {
+  return (
+    <Container>
+      <HeroSection>
+        <HeroText>
+          <h1>Portfolio de Eduardo Reis Boattini</h1>
+          <p>Check out some of my latest work</p>
+        </HeroText>
+        <HeroImage src="https://via.placeholder.com/800x600" alt="Portfolio Image" />
+      </HeroSection>
+      <AboutSection>
+        <AboutImage src="https://via.placeholder.com/400x400" alt="About Image" />
+        <AboutText>
+          <h2>About Me</h2>
+          <p>
+            As an experienced IT professional with over fifteen years of experience in application support and service desk management, I possess advanced skills in React.js Node.js development. My previous role as an Operations Technician at ECT - Brazil Post involved managing design and procedures in DW Oracle to EXCEL/ACCESS, KPI's, and Key Performance Indicators. I utilized the 5S methodology to increase delivery by 15% and proposed Kaizen practices to improve parcel delivery and reduce total expenses.
+
+As a Bilingual Support Analyst at TIVIT, I provided technical support for customer and business management systems, including hardware and software troubleshooting, Lotus Notes application setup, and proxy and firewall management. I have strong communication and problem-solving skills, coupled with excellent attention to detail and specific industry knowledge. I am proficient in SharePoint Designer and hold a driver's license (Type B - Brazil).
+
+Overall, I am confident in my ability to excel in my career journey as a React.js Node.js Developer, leveraging my experience, skills, and dedication to delivering exceptional results.
+          </p>
+        </AboutText>
+      </AboutSection>
+      <SkillsSection>
+        <SkillsText>
+          <h2>Skills</h2>
+          <p>Here are some of my top skills:</p>
+        </SkillsText>
+        <SkillsList>
+          <SkillItem>React.js</SkillItem>
+          <SkillItem>Node.js</SkillItem>
+          <SkillItem>JavaScript</SkillItem>
+          <SkillItem>HTML/CSS</SkillItem>
+          <SkillItem>SQL</SkillItem>
+        </SkillsList>
+      </SkillsSection>
+      <ProjectsSection>
+        <ProjectsText>
+          <h2>Projects</h2>
+          <p>Check out some of my latest projects:</p>
+        </ProjectsText>
+        <ProjectsList>
+          <ProjectItem>
+            <ProjectImage src="https://via.placeholder.com/400x300" alt="Project Image" />
+            <ProjectTitle>Project 1</ProjectTitle>
+            <ProjectDescription>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium erat eu purus
+              sodales, eu lacinia ipsum consectetur. Praesent non tristique augue. Aliquam aliquam
+              sapien ac fringilla vestibulum.
+            </ProjectDescription>
+          </ProjectItem>
+          <ProjectItem>
+            <ProjectImage src="https://via.placeholder.com/400x300" alt="Project Image" />
+            <ProjectTitle>Project 2</ProjectTitle>
+            <ProjectDescription>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium erat eu purus
+              sodales, eu lacinia ipsum consectetur. Praesent non tristique augue. Aliquam aliquam
+              sapien ac fringilla vestibulum.
+            </ProjectDescription>
+          </ProjectItem>
+          <ProjectItem>
+            <ProjectImage src="https://via.placeholder.com/400x300" alt="Project Image" />
+            <ProjectTitle>Project 3</ProjectTitle>
+            <ProjectDescription>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium erat eu purus
+              sodales, eu lacinia ipsum consectetur. Praesent non tristique augue. Aliquam aliquam
+              sapien ac fringilla vestibulum.
+            </ProjectDescription>
+          </ProjectItem>
+        </ProjectsList>
+      </ProjectsSection>
+    </Container>
+  );
+};
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const HeroSection = styled.div`
+text-align: center;
+`;
+
+const HeroImage = styled.img width: 50%; height: auto;;
+
+const AboutSection = styled.div display: flex; justify-content: space-evenly; align-items: center; margin: 50px 0;;
+
+const AboutImage = styled.img width: 30%; height: auto; border-radius: 50%;;
+
+const AboutText = styled.div width: 60%; text-align: center;;
+
+const SkillsSection = styled.div display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 50px 0;;
+
+const SkillsText = styled.div text-align: center;;
+
+const SkillsList = styled.ul list-style: none; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; padding: 0;;
+
+const SkillItem = styled.li background-color: #f2f2f2; border-radius: 10px; margin: 5px; padding: 10px;;
+
+const ProjectsSection = styled.div display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 50px 0;;
+
+const ProjectsText = styled.div text-align: center;;
+
+const ProjectsList = styled.ul list-style: none; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; padding: 0;;
+
+const ProjectItem = styled.li display: flex; flex-direction: column; align-items: center; margin: 20px; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); width: 400px; height: auto;;
+
+const ProjectImage = styled.img width: 100%; height: auto;;
+
+const ProjectTitle = styled.h3 margin: 10px 0;;
+
+const ProjectDescription = styled.p text-align: center; padding: 20px;;
+
+export default Portfolio;
